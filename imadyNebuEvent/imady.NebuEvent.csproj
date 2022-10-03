@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <Company>imady Technologies Ltd.</Company>
+    <Authors>Frank Shen</Authors>
+    <Version>0.2.0</Version>
+    <PackageId>imady.NebuEvent</PackageId>
+    <Description>A Message-Orientated mini event system (Sync) for small size applications.</Description>
+    <Copyright>Copyright imady (Suzhou) Limited 2022</Copyright>
+    <PackageProjectUrl>https://github.com/imadyTech/NebuEvent</PackageProjectUrl>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="newtonsoft.json" Version="13.0.1" />
+  </ItemGroup>
+
+	<ItemDefinitionGroup>
+		<PostBuildEvent>
+			<!--<Command>copy $(ProjectDir)$(Configuration)\$(TargetFileName) $(ProjectDir)$(Configuration)\copyOfMyproject.exe</Command>-->
+			<Message>imadyEvent has been built successfully.</Message>
+		</PostBuildEvent>
+	</ItemDefinitionGroup>
+	
+</Project>

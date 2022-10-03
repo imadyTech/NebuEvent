@@ -1,0 +1,22 @@
+{
+  "name": "com.imady.Event",
+  "displayName": "imadyEvent",
+  "description": "A plug&play event system for .net and unity.",
+  "version": "1.0.0",
+  "unity": "2018.3",
+  "license": "MIT",
+  "dependencies": {
+    "NETStandard.Library": "2.0.3",
+    "Newtonsoft.Json": "12.0.301"
+  },
+  "keywords": [
+    "event",
+    "C#",
+    ".net"
+  ],
+  "author": {
+    "name": "FrankShen",
+    "email": "fs@imady.com",
+    "url": "http://www.imady.com"
+  }
+}
