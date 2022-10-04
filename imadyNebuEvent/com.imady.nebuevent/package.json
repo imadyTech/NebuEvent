@@ -2,13 +2,12 @@
   "name": "com.imady.nebuevent",
   "displayName": "imady.NebuEvent",
   "description": "A Message-Orientated mini event system (Sync) for small size applications.",
-  "version": "0.2.0",
+  "version": "0.2.5",
   "unity": "2018.3",
   "license": "MIT",
   "repository": {
     "url": "https://github.com/imadyTech/UnityUI.git",
-    "type": "git",
-    "revision": "370080478647882de41c08e5ca4b4ec26032d9c7"
+    "type": "git"
   },
   "upm": {
     "changelog": "# Initial upload."
