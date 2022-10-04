@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>imadyEvent</id>
+    <version>1.0.0</version>
+    <authors>imadyEvent</authors>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="newtonsoft.json" version="11.0.2" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="D:\imadyEvent\imadyEvent\bin\Release\netstandard2.0\imadyEvent.dll" target="lib\netstandard2.0\imadyEvent.dll" />
+  </files>
+</package>

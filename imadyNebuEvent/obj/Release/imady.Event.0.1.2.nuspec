@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>imady.Event</id>
+    <version>0.1.2</version>
+    <authors>Frank Shen</authors>
+    <description>A plug&amp;play event system for unity and .Net.</description>
+    <copyright>Copyright imady (Suzhou) Limited 2022</copyright>
+    <dependencies>
+      <group targetFramework=".NETStandard2.1">
+        <dependency id="newtonsoft.json" version="13.0.1" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="D:\imadyEvent\imadyEvent\bin\Release\netstandard2.1\imadyEvent.dll" target="lib\netstandard2.1\imadyEvent.dll" />
+  </files>
+</package>

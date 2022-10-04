@@ -1,0 +1,10 @@
+D:\imadyEvent\imadyEvent\bin\Debug\netstandard2.1\imadyEvent.deps.json
+D:\imadyEvent\imadyEvent\bin\Debug\netstandard2.1\imadyEvent.dll
+D:\imadyEvent\imadyEvent\bin\Debug\netstandard2.1\imadyEvent.pdb
+D:\imadyEvent\imadyEvent\obj\Debug\netstandard2.1\imadyEvent.csproj.AssemblyReference.cache
+D:\imadyEvent\imadyEvent\obj\Debug\netstandard2.1\imadyEvent.GeneratedMSBuildEditorConfig.editorconfig
+D:\imadyEvent\imadyEvent\obj\Debug\netstandard2.1\imadyEvent.AssemblyInfoInputs.cache
+D:\imadyEvent\imadyEvent\obj\Debug\netstandard2.1\imadyEvent.AssemblyInfo.cs
+D:\imadyEvent\imadyEvent\obj\Debug\netstandard2.1\imadyEvent.csproj.CoreCompileInputs.cache
+D:\imadyEvent\imadyEvent\obj\Debug\netstandard2.1\imadyEvent.dll
+D:\imadyEvent\imadyEvent\obj\Debug\netstandard2.1\imadyEvent.pdb
