@@ -1,0 +1,12 @@
+{
+"name": "com.imady.NebuEvent",
+"displayName": "imadyNebuEvent",
+"description": "A Message-Orientated mini event system (Sync) for small size applications.",
+"version": "0.2.0",
+"unity": "2018.3",
+"license": "MIT",
+"dependencies": {
+	"NETStandard.Library":"2.1.0",
+	"Newtonsoft.Json":"13.0.1"
+ }
+}
