@@ -349,3 +349,21 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
+com.imady.nebuevent/Runtime/com.imady.nebuevent.asmdef
+com.imady.nebuevent/Runtime/imady.NebuEventObject/NebuEventInterfaceObjectBase.cs
+com.imady.nebuevent/Runtime/imady.NebuEventSystem/INebuEventObjectBase.cs
+com.imady.nebuevent/Runtime/imady.NebuEventSystem/INebuObserver.cs
+com.imady.nebuevent/Runtime/imady.NebuEventSystem/INebuProvider.cs
+com.imady.nebuevent/Runtime/imady.NebuEventSystem/NebuEventManager.cs
+com.imady.nebuevent/Runtime/imady.NebuMessage/NebuErrorMessage.cs
+com.imady.nebuevent/Runtime/imady.NebuMessage/NebuMessage.cs
+com.imady.nebuevent/Runtime/imady.NebuMessage/NebuMessageBase.cs
+com.imady.nebuevent/Runtime/imady.NebuMessage/DataMessage/NebuDataMessage.cs
+com.imady.nebuevent/Runtime/imady.NebuMessage/InputMessage/INebuInput.cs
+com.imady.nebuevent/Runtime/imady.NebuMessage/InputMessage/NebuKeyboardInput.cs
+com.imady.nebuevent/Runtime/imady.NebuMessage/InputMessage/NebuMouseInput.cs
+com.imady.nebuevent/Runtime/imady.NebuMessage/InputMessage/NebuUnityButtonInput.cs
+com.imady.nebuevent/Runtime/imady.NebuMessage/InputMessage/NebuUnityCollisionInput.cs
+com.imady.nebuevent/Runtime/imady.NebuMessage/InputMessage/NebuUnityUIMessage.cs
+com.imady.nebuevent/Runtime/imady.NebuMessage/ServiceMsg/NebuServiceMsg.cs
+com.imady.nebuevent/Runtime/imady.NebuMessage/ServiceMsg/NebuServiceMsgBase.cs
