@@ -1,6 +1,6 @@
 {
   "name": "com.imady.nebuevent",
-  "displayName": "imadyNebuEvent",
+  "displayName": "imady.NebuEvent",
   "description": "A Message-Orientated mini event system (Sync) for small size applications.",
   "version": "0.2.0",
   "unity": "2018.3",
@@ -9,6 +9,15 @@
     "NETStandard.Library": "2.1.0",
     "Newtonsoft.Json": "13.0.1"
   },
+  "repository": {
+    "url": "https://github.com/imadyTech/UnityUI.git",
+    "type": "git",
+    "revision": "370080478647882de41c08e5ca4b4ec26032d9c7"
+  },
+  "upm": {
+    "changelog": "# Initial upload."
+  },  
+  "type": "template",
   "keywords": [
     "event",
     "C#",
