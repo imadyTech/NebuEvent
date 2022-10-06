@@ -15,11 +15,11 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyCopyrightAttribute("Copyright imady (Suzhou) Limited 2022")]
 [assembly: System.Reflection.AssemblyDescriptionAttribute("A Message-Orientated mini event system (Sync) for small size applications.")]
-[assembly: System.Reflection.AssemblyFileVersionAttribute("0.2.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("0.2.0")]
+[assembly: System.Reflection.AssemblyFileVersionAttribute("0.2.6.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("0.2.6")]
 [assembly: System.Reflection.AssemblyProductAttribute("imady.NebuEvent")]
 [assembly: System.Reflection.AssemblyTitleAttribute("imady.NebuEvent")]
-[assembly: System.Reflection.AssemblyVersionAttribute("0.2.0.0")]
+[assembly: System.Reflection.AssemblyVersionAttribute("0.2.6.0")]
 
 // 由 MSBuild WriteCodeFragment 类生成。
 

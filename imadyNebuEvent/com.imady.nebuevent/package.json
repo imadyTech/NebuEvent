@@ -2,7 +2,7 @@
   "name": "com.imady.nebuevent",
   "displayName": "imady.NebuEvent",
   "description": "A Message-Orientated mini event system (Sync) for small size applications.",
-  "version": "0.2.5",
+  "version": "0.2.6",
   "unity": "2018.3",
   "license": "MIT",
   "repository": {

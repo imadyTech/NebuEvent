@@ -4,7 +4,7 @@
     <TargetFramework>netstandard2.1</TargetFramework>
     <Company>imady Technologies Ltd.</Company>
     <Authors>Frank Shen</Authors>
-    <Version>0.2.0</Version>
+    <Version>0.2.6</Version>
     <PackageId>imady.NebuEvent</PackageId>
     <Description>A Message-Orientated mini event system (Sync) for small size applications.</Description>
     <Copyright>Copyright imady (Suzhou) Limited 2022</Copyright>
