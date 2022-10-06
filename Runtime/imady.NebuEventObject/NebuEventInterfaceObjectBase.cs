@@ -28,26 +28,27 @@ namespace imady.NebuEvent
         /// </summary>
         public Type eventObjectType { get; }
 
-        /// <summary>
-        /// The flag indicating whether an external type parameter is passed in.
-        /// </summary>
-        private bool isUseExternalType;
-
         protected List<INebuEventObjectBase> observers;
 
-
+        /// <summary>
+        /// The case your provider/observer inheritates from NebuEventInterfaceObjectBase: Do nothing.
+        /// </summary>
         public NebuEventInterfaceObjectBase()
         {
             observers = new List<INebuEventObjectBase>();
             eventObjectType = this.GetType();
-            isUseExternalType = false;
         }
 
+        /// <summary>
+        /// The case your provider/observer does NOT inheritate from NebuEventInterfaceObjectBase: 
+        /// You need implement your class with adaptor pattern and pass in a type parameter,
+        /// or simply implement the INebuEventObjectBase interface by yourself and ignore this implementation.
+        /// </summary>
+        /// <param name="type"></param>
         public NebuEventInterfaceObjectBase(Type type)
         {
             observers = new List<INebuEventObjectBase>();
             eventObjectType = type;
-            isUseExternalType = true;
         }
 
 
@@ -59,19 +60,6 @@ namespace imady.NebuEvent
         {
             eventSystem.Register(this);
             return this;
-        }
-
-        /// <summary>
-        /// IOBSERVER接口的实现。（因为考虑到子类需要实现提供或者监听多种类型的消息，因此父类中不以泛型方式实现接口）
-        /// </summary>
-        public virtual void OnCompleted()
-        {
-
-        }
-
-        public virtual void OnError(Exception ex)
-        {
-
         }
 
         /// <summary>
@@ -131,7 +119,7 @@ namespace imady.NebuEvent
             {
                 if (observer.isObservingMessage(providerInterface) && !observers.Contains(observer))
                 {
-                    SubscribeLog += ($"[Subscribe]: {this.ToString()}: {providerInterface.Name} <--> {observer.eventObjectType.Name}\n");
+                    SubscribeLog += ($"[Subscribe]: {this.ToString()}: {providerInterface.Name} <--> {observer.GetType().Name}\n");
                     //Add to the observer list if true
                     this.observers.Add(observer);
                 }
@@ -142,6 +130,7 @@ namespace imady.NebuEvent
         /// 通知消息所有的相关监听者（等同于观察者模式的OnCompleted）; 
         /// Notify all the observers;
         /// TODO: 设计MessagePool以提升运行效率。
+        /// TODO: the methodInfo from reflection very likely reduced the performance. Modify the design of the obervers List to improve.
         /// TODO: the message instance is not disposed in current implementation. In the case of large volume application, You need either GC the messages
         /// or use a message pooling design for improvement.
         /// </summary>
@@ -153,7 +142,7 @@ namespace imady.NebuEvent
 
             foreach (var observer in prospectedObservers)
             {
-                MethodInfo methodinfo = observer.eventObjectType.GetMethod("OnNext", new Type[] { messaggeType });
+                MethodInfo methodinfo = observer.GetType().GetMethod("OnNext", new Type[] { messaggeType });
                 if (methodinfo != null)
                     methodinfo.Invoke(observer, new object[] { message });
             }

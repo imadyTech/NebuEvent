@@ -7,11 +7,6 @@ namespace imady.NebuEvent
     public interface INebuEventObjectBase
     {
         /// <summary>
-        /// This parameter is used to indicate the providing/observing mapping relationship.
-        /// </summary>
-        Type eventObjectType { get; }
-
-        /// <summary>
         /// Indicator of whether an eventObject is PROVIDING any messages.
         /// </summary>
         bool isProvider { get; }
