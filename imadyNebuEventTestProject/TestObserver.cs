@@ -1,7 +1,7 @@
 ﻿
-namespace imadyNebuEventTestProject
+namespace imady.NebuEventTestProject
 {
-    internal class TestObserver: NebuEventInterfaceObjectBase, INebuObserver<TestMessage>
+    internal class TestObserver : NebuEventInterfaceObjectBase, INebuObserver<TestMessage>
     {
         internal bool testResult = false;
         internal string? testMessage;

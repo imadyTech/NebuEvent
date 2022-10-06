@@ -1,5 +1,5 @@
 ﻿
-namespace imadyNebuEventTestProject
+namespace imady.NebuEventTestProject
 {
     internal class TestProvider: NebuEventInterfaceObjectBase, INebuProvider<TestMessage>
     {

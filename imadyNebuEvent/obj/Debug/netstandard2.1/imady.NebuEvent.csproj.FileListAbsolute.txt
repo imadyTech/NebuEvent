@@ -18,3 +18,13 @@ D:\imadyEvent\imadyNebuEvent\obj\Debug\netstandard2.1\imady.NebuEvent.AssemblyIn
 D:\imadyEvent\imadyNebuEvent\obj\Debug\netstandard2.1\imady.NebuEvent.csproj.CoreCompileInputs.cache
 D:\imadyEvent\imadyNebuEvent\obj\Debug\netstandard2.1\imady.NebuEvent.dll
 D:\imadyEvent\imadyNebuEvent\obj\Debug\netstandard2.1\imady.NebuEvent.pdb
+D:\imady.NebuEvent\imadyNebuEvent\bin\Debug\netstandard2.1\imady.NebuEvent.deps.json
+D:\imady.NebuEvent\imadyNebuEvent\bin\Debug\netstandard2.1\imady.NebuEvent.dll
+D:\imady.NebuEvent\imadyNebuEvent\bin\Debug\netstandard2.1\imady.NebuEvent.pdb
+D:\imady.NebuEvent\imadyNebuEvent\obj\Debug\netstandard2.1\imady.NebuEvent.csproj.AssemblyReference.cache
+D:\imady.NebuEvent\imadyNebuEvent\obj\Debug\netstandard2.1\imady.NebuEvent.GeneratedMSBuildEditorConfig.editorconfig
+D:\imady.NebuEvent\imadyNebuEvent\obj\Debug\netstandard2.1\imady.NebuEvent.AssemblyInfoInputs.cache
+D:\imady.NebuEvent\imadyNebuEvent\obj\Debug\netstandard2.1\imady.NebuEvent.AssemblyInfo.cs
+D:\imady.NebuEvent\imadyNebuEvent\obj\Debug\netstandard2.1\imady.NebuEvent.csproj.CoreCompileInputs.cache
+D:\imady.NebuEvent\imadyNebuEvent\obj\Debug\netstandard2.1\imady.NebuEvent.dll
+D:\imady.NebuEvent\imadyNebuEvent\obj\Debug\netstandard2.1\imady.NebuEvent.pdb

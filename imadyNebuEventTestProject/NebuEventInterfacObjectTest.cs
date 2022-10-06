@@ -1,7 +1,17 @@
-namespace imadyNebuEventTestProject
+using Xunit.Abstractions;
+
+namespace imady.NebuEventTestProject
 {
     public class NebuEventInterfacObjectTest
     {
+        //output the console.writeline result
+        private readonly ITestOutputHelper _testOutputHelper;
+        public NebuEventInterfacObjectTest(ITestOutputHelper testOutputHelper)
+        {
+            _testOutputHelper = testOutputHelper;
+        }
+
+
         [Fact]
         public void ParameterLessTest()
         {
@@ -30,7 +40,7 @@ namespace imadyNebuEventTestProject
         [Fact]
         public void WithParameterTest()
         {
-            var manager  = new NebuEventManager();
+            var manager = new NebuEventManager();
 
             var provider = new TestProvider()
                 .AddEventManager(manager);
@@ -42,7 +52,31 @@ namespace imadyNebuEventTestProject
             //If the observer instance is subscribed to the provider, the observer.testResult should has a value of true.
             provider?.NotifyObservers(new TestMessage()
             {
-                 senderName= "WithParameterTest"
+                senderName = "WithParameterTest"
+            });
+
+            Assert.Equal("WithParameterTest", observer?.testMessage);
+
+        }
+
+        [Fact]
+        public void AdpatorPatternTest()
+        {
+            var manager = new NebuEventManager();
+
+            var provider = new TestAdaptorProvider()
+                .AddEventManager(manager);
+            Assert.NotNull(provider);   
+            var observer = new TestAdaptorObserver()
+                .AddEventManager(manager);
+            Assert.NotNull(observer);
+
+            manager.MappingEventObjectsByInterfaces();
+
+            //If the observer instance is subscribed to the provider, the observer.testResult should has a value of true.
+            provider?.NotifyObservers(new TestMessage()
+            {
+                senderName = "WithParameterTest"
             });
 
             Assert.Equal("WithParameterTest", observer?.testMessage);

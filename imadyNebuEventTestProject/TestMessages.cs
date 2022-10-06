@@ -1,7 +1,7 @@
 ﻿
-namespace imadyNebuEventTestProject
+namespace imady.NebuEventTestProject
 {
-    internal class TestMessage : NebuMessageBase
+    public class TestMessage : NebuMessageBase
     {
         public TestMessage()
         {
