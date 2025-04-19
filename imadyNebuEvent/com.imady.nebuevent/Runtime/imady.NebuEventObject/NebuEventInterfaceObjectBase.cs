@@ -1,6 +1,7 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 using System.Reflection;
 
 
@@ -146,6 +147,27 @@ namespace imady.NebuEvent
                 if (methodinfo != null)
                     methodinfo.Invoke(observer, new object[] { message });
             }
+        }
+
+        /// <summary>
+        /// Asynchronously notify all the observers.
+        /// </summary>
+        /// <param name="message"></param>
+        public virtual async Task NotifyObserversAsync(NebuMessageBase message)
+        {
+            Type messageType = message.GetType();
+            var prospectedObservers = observers.Where(o => o.isObservingMessage(messageType)).ToList();
+
+            List<Task> tasks = new List<Task>();
+            foreach (var observer in prospectedObservers)
+            {
+                MethodInfo methodInfo = observer.GetType().GetMethod("OnNextAsync", new Type[] { messageType });
+                if (methodInfo != null)
+                {
+                    tasks.Add(Task.Run(() => methodInfo.Invoke(observer, new object[] { message })));
+                }
+            }
+            await Task.WhenAll(tasks);
         }
         #endregion
     }

@@ -1,6 +1,7 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace imady.NebuEvent
 {
@@ -47,5 +48,7 @@ namespace imady.NebuEvent
         public void NotifyObservers(NebuMessageBase message) => interfaceEventObject.NotifyObservers(message);
 
         public void Subscribe(INebuEventObjectBase observer) => interfaceEventObject.Subscribe(observer);
+
+        public async virtual Task NotifyObserversAsync(NebuMessageBase message) => await interfaceEventObject.NotifyObserversAsync(message);
     }
 }

@@ -1,6 +1,24 @@
 # imady NebuEvent System
 A Message-Orientated mini event system (Sync) for small size applications.
 
+## Core Concept
+
+NebuEvent is an implementation of Reactive Programming, and shares characteristics with several established event and messaging systems. It is most closely aligned with the **Event Aggregator/Mediator pattern**, **Pub/Sub systems**, and the concept of **Message Bus**, but it has its own unique flavor with the automatic interface mapping.
+
+**Key factors of the core:**
+
+*   **Direct Communication:** Providers and observers communicate directly without a central messaging hub after the initial setup.
+*   **Automatic Interface-Based Mapping:**  Interfaces are automatically used to map providers to their corresponding observers.
+*   **Central Manager for Setup:** A central manager is used to define and establish the mappings between providers and observers.
+*   **Lightweight:** The system is designed to be lightweight with minimal overhead.
+*   **No Dependency Injection (but similar effect):**  It achieves the benefits of dependency injection without requiring a full dependency injection framework.
+*   **Reduced Complexity and Maintenance:** It aims to reduce project complexity and the associated maintenance costs.
+
+**Future Goals:**
+
+*   **Asynchronous Support:**  Extending the system to support asynchronous communication.
+*   **Real-time Re-mapping:** Allowing for mappings to be changed dynamically at runtime.
+*   **Advanced Features:** Including notification filters, unsubscribe mechanisms, and OnError/OnComplete functions.
 --------------
 You may refer to the sample code in the testing project:
 
